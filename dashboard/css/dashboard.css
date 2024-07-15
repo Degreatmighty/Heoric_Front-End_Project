@@ -1,0 +1,208 @@
+/* ====== Navigation Header Starts Here =======  */
+
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoutContainer a {
+    color: var(--dark-gray-clr);
+    transition: all 0.4s ease-in-out;
+}
+
+.logoutContainer a:hover {
+    color: #000000ee;
+}
+
+
+/* ---- Main Body -----   */
+
+.titleContainer {
+    background-color: var(--light-gray-clr);
+    padding: 20px;
+    font-weight: bold;
+}
+
+.mainContent {
+    padding: 20px;
+}
+
+
+/* Main Container Starts Here   */
+
+/* .sideBar {
+    height: 100%;
+}
+
+.mainContent {
+    
+    height: 100%;
+} */
+
+.sidebarMenu {
+    padding: 10px 10px 10px 50px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.sidebarMenu a {
+    color: var(--darker-gray-clr);
+}
+
+.sidebarMenu i {
+    margin-right: 20px;
+    color: var(--darker-gray-clr);
+}
+
+.sidebarMenu:hover {
+    background-color: var(--light-gray-clr);
+}
+
+.dropdown {
+    padding: 5px 0px 5px 5px;
+    display: none;
+}
+
+.dropdown i {
+    margin-right: 10px;
+}
+
+.dropdownMenu {
+    padding-block: 5px;
+    margin-left: 10px;
+}
+
+
+/* DASHBOARD PAGE STYLINGS STARTS HERE  */
+
+.homeContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.homeContainer a {
+    flex-basis: 300px;
+}
+
+.contentBox {
+    flex-basis: 300px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.contentBox:hover {
+    box-shadow: 0 0 10px #c0c0c0;
+    opacity: .8;
+    transition: .8s;
+}
+
+.contentBox i{
+    font-size: 40px;
+    color: #fff !important;
+}
+
+.contentBox p{
+    font-size: 1.25rem;
+    margin-top: 5px;
+    color: #fff;
+}
+
+.contentBoxBlue {
+    background-color: #003366;
+}
+
+.contentBoxDarkRed {
+    background-color: var(--darkred-clr);
+}
+
+.contentBoxGreen {
+    background-color: green;
+}
+
+.contentBoxOrange {
+    background-color: orange;
+}
+
+.contentBoxRed {
+    background-color: #ff0000;
+}
+
+.contentBoxMediumBlue {
+    background-color: #001966;
+}
+
+
+/* PROFILE STYLING STARTS HERE  */
+
+/* --- table styling ---  */
+
+.profileTable {
+    width: calc(100% - 300px);
+    margin: auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px #c0c0c0;
+    border: none;
+}
+
+.profileTable td {
+    padding: 15px;
+}
+
+.profileTable tr:nth-child(even) {
+    background-color: var(--light-gray-clr);
+}
+
+
+/* Profile Image Styling ----  */
+.profileFrame {
+    width: 180px;
+    height: 180px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.profileFrame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Profile Button Styling ---  */
+
+.editBtnLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.editBtn {
+    margin-top: 20px;
+    padding: 15px 25px;
+    border: none;
+    background-color: var(--darkred-clr);
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.editBtn:active {
+    border: 3px solid orange;
+}
+
+
+
+
+
+
