@@ -1,20 +1,29 @@
 <?php
 
+
     $select = mysqli_query($conn, "SELECT * FROM users WHERE email = '$email'");
+
     if(mysqli_num_rows($select) > 0){
         $row = mysqli_fetch_array($select);
         $id = $row['id'];
         $fullName = $row['full_name'];
         $email = $row['email'];
         $phoneNumber = $row['phone_number'];
+        $profile = $row['profile'];
         $date = $row['date'];
         $time = $row['time'];
+
+        if (empty($profile)) {
+            $profile = "user2.png";
+        } else {
+            $profile = $profile;
+        }
 
         // Creating a profile image form_banner
 
         echo "
             <div class='profileFrame'>
-                <img src='../dashboard/assets/images/profileImgs/user2.png'>
+                <img src='../dashboard/assets/images/profileImgs/$profile'>
             </div>
         ";
 
@@ -50,12 +59,11 @@
         // Creating an Edit Button
 
         echo "
-            <a href='edit_profile.php?edit_profile_id=$id' class='editBtnLink'>
-                <button class='editBtn'>Edit Profile</button>
+            <a href='dashboard.php?file=profile-edit.php&title=edit-profile&edit_profile_id=$id' class='editBtnLink'>
+                <button class='primaryBtn'>Edit Profile</button>
             </a>
         ";
 
     } else {
-        header("location: index.php");
+        header("location: ../dashboard/dashboard.php");
     }
-    

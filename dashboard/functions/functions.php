@@ -15,7 +15,7 @@ function getTitle() {
 
 //  Include files to the DASHBOARD -->
 function getFile() { 
-    global $email, $conn; 
+    global $email, $conn, $select_admin; 
     if(isset($_GET['file'])){
        $file = $_GET['file'];
        $include = include "includes/$file";

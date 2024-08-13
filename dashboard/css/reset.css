@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scrollbar-width: none;
+    /* scrollbar-width: none; */
 }
 
 body {
@@ -102,5 +102,17 @@ a {
 
 .mainBody {
     flex: 1;
+    overflow: auto;
 }
 
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #8d000061;
+}

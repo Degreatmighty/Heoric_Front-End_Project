@@ -26,6 +26,8 @@
 
 .mainContent {
     padding: 20px;
+    overflow: auto;
+    height: 78vh;
 }
 
 
@@ -186,7 +188,7 @@
     margin: 10px 0;
 }
 
-.editBtn {
+.primaryBtn {
     margin-top: 20px;
     padding: 15px 25px;
     border: none;
@@ -197,12 +199,170 @@
     font-size: 1.1rem;
 }
 
-.editBtn:active {
+.primaryBtn:active {
     border: 3px solid orange;
+    transform: scale(.9);
+    transition: .4s ease-in-out;
+}
+
+
+/* --- Profile Edit Styling ---   */
+
+
+form {
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form input {
+    padding: 15px;
+    border-radius: 4px;
+    border: none;
+    font-size: 17px;
+    background-color: #ccc;
+    color: #000000be;
+}
+
+form button {
+    padding: 15px;
+    border-radius: 4px;
+    border: none;
+    font-size: 17px;
+    background-color:var(--clr-dark-red);
+    color: #fff;
+    cursor: pointer;
+}
+
+.updateProfileBtn {
+    margin-top: -5px;
+    transition: .5s;
+}
+
+.updateProfileBtn:hover {
+    opacity: .8;
+}
+
+.profileImgInput {
+    margin-top: -15px;
+}
+
+.fa-spinner {
+    color: #fff !important;
+}
+
+
+/* ======= ALERT MESSGAGE ======  */
+
+.messageContainer {
+    display: none;
+}
+
+.success_msg {
+    display: none;
+    width: 100%;
+    overflow: hidden;
+    background-color: #DCF8C6;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #003200;
+    border-radius: 4px;
+}
+
+.failed_msg {
+    width: 100%;
+    overflow: hidden;
+    background-color: #fffacd;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: darkred;
+    border-radius: 4px;
+}
+
+
+/* User Styling section  */
+
+.userTable {
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.userTable th {
+    padding: 1.2rem .9rem;
+    font-size: .9rem;
+    border: none;
+    border-right: .5px solid #ccc; 
+    background: var(--darkred-clr);
+    color: #fff;
+    text-wrap: nowrap;
+}
+
+.userTable td {
+    padding: 2px 15px;
+    text-wrap: nowrap;
+}
+
+.userTable tr {
+    font-size: .9rem;
+}
+
+.userFrame {
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.editBtn, .DeleteBtn,
+.makeAdminBtn, #makeUserBtn {
+    padding: 10px 13px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: .7rem;
+    border-radius: 5px;
+}
+
+.editBtn {
+    background: #0634ec;
+    color: #fff;
+}
+
+.DeleteBtn {
+    background: #FF0000;
+    color: #fff;
+}
+
+.makeAdminBtn {
+    background: #009900;
+    color: #fff;
+}
+
+#makeUserBtn {
+    background: darkred;
+    color: #fff;
 }
 
 
 
 
+#responseMessage {
+    color: white;
+    font-size: 20px;
+    margin: 20px auto;
+    text-align: center;
+    
+    position: fixed;
+    top: 7.25rem;
+    right: 1.25rem;
+}
 
-
+.green-background {
+    max-width: 650px;
+    background-color: #009900;
+    padding: 10px;
+    border-radius: 3px;
+}
